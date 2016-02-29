@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity" >
+
+    <Button
+        android:id="@+id/Overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Territory Overview"
+        android:textSize="30sp"
+        android:background="#33b5e5"
+        android:layout_marginTop="20dp" 
+        android:onClick="Overview"/>
+    
+    
+    <Button
+        android:id="@+id/CheckedOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Territories Checked Out"
+        android:background="#33b5e5"
+        android:textSize="30sp"
+        android:onClick="TerritoriesCheckedOut"
+        android:layout_marginTop="20dp" />
+    
+     
+    <!-- <Button
+        android:id="@+id/AddTerritory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a Territory"
+        android:background="#ff00ffff"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:onClick="AddTerritory" /> -->
+
+
+</LinearLayout>

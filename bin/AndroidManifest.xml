@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.jw.territorymanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.jw.territorymanager.Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.MainMenuActivity"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.Overview"
+            android:label="@string/title_activity_overview"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.TerritoryInfo"
+            android:label="@string/title_activity_territory_info" >
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.CurrentlyBeingCheckedout"
+            android:label="@string/title_activity_currently_being_checkedout" >
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.CheckedOutOverview"
+            android:label="@string/title_activity_checked_out_overview" 
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.AddTerritory"
+            android:label="@string/title_activity_add_territory" >
+        </activity>
+
+        <provider
+            android:name="org.jw.territorymanager.TerritoryContentProvider"
+            android:authorities="orj.jw.territoryprovider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+
+        <activity
+            android:name="org.jw.territorymanager.DeleteTerritoryActivity"
+            android:label="@string/title_activity_delete_territory" >
+        </activity>
+        <activity
+            android:name="org.jw.territorymanager.SelectTerritory"
+            android:label="@string/title_activity_select_territory"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

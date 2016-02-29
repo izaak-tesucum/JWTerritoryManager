@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#ffffffff"
+    tools:context=".Overview">
+
+    <RelativeLayout
+        android:id="@+id/territoryinfo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff" >
+    
+    <TextView
+        android:id="@+id/TerritoryPickedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Territory's Information"
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    
+    <ScrollView 
+        android:id="@+id/TerritoryInfoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/TerritoryPickedText"
+        >
+        
+     <RelativeLayout
+         android:id="@+id/Overview_layout"
+         android:layout_width="match_parent"
+         android:layout_height="196dp" >
+	    
+        <TextView
+        android:id="@+id/tnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Territory No.: " 
+        android:textSize="20sp"
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tnumber"
+        android:text="Description: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:text="Type: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:text="Difficulty Level: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level"
+        android:text="Checked in: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in"
+        android:text="Checked out: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:id="@+id/holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/out"
+        android:text="Card Holder: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:id="@+id/date_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/holder"
+        android:text="Date checked in: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/date_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_in"
+        android:text="Date checked out: "
+        android:textSize="20sp" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/numbertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/description"
+        android:layout_toRightOf="@+id/out"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/desctextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/type"
+        android:layout_toRightOf="@+id/tnumber"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/typetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/level"
+        android:layout_toRightOf="@+id/type"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/date_out"
+        android:layout_alignBottom="@+id/date_out"
+        android:layout_toRightOf="@+id/date_out"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/leveltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/level"
+        android:layout_toRightOf="@+id/level"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/outtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/out"
+        android:layout_alignBottom="@+id/out"
+        android:layout_toRightOf="@+id/level"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/intext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/out"
+        android:layout_toRightOf="@+id/level"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/HolderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_in"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/holder"
+        android:ems="10"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic" >
+
+        
+    </TextView>
+
+  <!--   <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_out"
+        android:layout_toRightOf="@+id/numbertextView"
+        android:onClick="Delete"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/date_out"
+        android:layout_marginLeft="17dp"
+        android:text="Delete" />
+         -->
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_out"
+        android:layout_toRightOf="@+id/outtext"
+        android:text="N/A"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#33b5e5"
+        android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/search_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/territoryinfo_layout"
+	    android:layout_marginTop="18dp"
+	    android:background="#ffffffff"
+	     >
+
+	    <EditText
+	        android:id="@+id/searchTerritory"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/searchButton"
+	        android:layout_alignBottom="@+id/searchButton"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/searchButton"
+	        android:ems="10"
+	        android:hint="Search Territory"
+	        android:inputType="number"
+	        android:textColor="#ff0000ff" >
+
+	        <requestFocus />
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/searchButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:background="#33b5e5"
+	        android:onClick="search"
+	        android:text="Search"
+	        android:textColor="#ffffffff" />
+
+	</RelativeLayout>
+	
+	<ListView
+        android:id="@+id/TerritoryListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_layout"
+        android:background="#33b5e5"
+        >
+    </ListView>
+       
+</RelativeLayout>
+
+ <!-- android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/territoryinfo_layout"
+	    android:layout_marginTop="18dp"
+	    android:searchSuggestIntentAction="android.intent.action.VIEW" -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JWTerritoryManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_overview">Overview</string>
+    <string name="title_activity_territory_info">TerritoryInfo</string>
+    <string name="title_activity_currently_being_checkedout">CurrentlyBeingCheckedout</string>
+    <string name="title_activity_checked_out_overview">CheckedOutOverview</string>
+    <string name="title_activity_add_territory">AddTerritory</string>
+    <string name="title_activity_delete_territory">DeleteTerritoryActivity</string>
+    <string name="title_activity_select_territory">SelectTerritory</string>
+
+</resources>
